@@ -5,14 +5,7 @@ namespace iron_dome_game
 
 Pos Entity::pos() 
 {
-    if (isStatic())
-    {
-        return trajectory.initialState.pos;
-    }
-    else
-    {
-        return trajectory.calculatePosition();
-    }
+    return isStatic() ? trajectory.initialState.pos : trajectory.calculatePosition(); 
 }
 
 //============================================================================//
@@ -28,10 +21,8 @@ BoundingBox Entity::boundingBox()
 }
 
 bool Entity::hitGround() {
-    auto y_velocity = trajectory.initialState.velocity.y + GRAVITY * trajectory.duration().count(); // v(t) = v0 + a*t
-    auto y_pos = trajectory.calculatePosition().y;
-
-    return !isStatic() && y_velocity < 0 && y_pos <= 0;
+    auto pos = trajectory.calculatePosition();
+    return !isStatic() && pos.y < 0;
 }
 
 }

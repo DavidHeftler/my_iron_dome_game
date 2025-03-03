@@ -18,13 +18,14 @@ enum EntityType
 struct Entity
 {
     Trajectory trajectory;
+    uint16_t width = 0;
+    uint16_t height = 0;
+
+    virtual ~Entity() = default; // Ensure proper cleanup
 
     virtual EntityType type() { return EntityType::NONE; }
 
     Pos pos();
-
-    uint16_t width = 0;
-    uint16_t height = 0;
 
     BoundingBox boundingBox();
 
