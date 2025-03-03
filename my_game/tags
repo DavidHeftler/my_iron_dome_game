@@ -1,0 +1,114 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/david/iron_dome_game/my_game/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+BoundingBox	./include/grid.hpp	/^struct BoundingBox$/;"	s	namespace:iron_dome_game
+CANNON	./include/entity.hpp	/^    CANNON,$/;"	e	enum:iron_dome_game::EntityType
+Canon	./include/canon.hpp	/^struct Canon : public Entity$/;"	s	namespace:iron_dome_game
+Canon	./src/canon.cpp	/^    Canon::Canon()$/;"	f	class:iron_dome_game::Canon
+DEG_TO_RAD	./src/game.cpp	/^#define DEG_TO_RAD(/;"	d	file:
+Entity	./include/entity.hpp	/^struct Entity$/;"	s	namespace:iron_dome_game
+EntityType	./include/entity.hpp	/^enum EntityType$/;"	g	namespace:iron_dome_game
+Fire	./src/canon.cpp	/^    std::shared_ptr<Rocket> Canon::Fire() {$/;"	f	class:iron_dome_game::Canon	typeref:typename:std::shared_ptr<Rocket>
+GAME_RUN_TIME_SEC	./include/game.hpp	/^    static constexpr const int GAME_RUN_TIME_SEC = 20;$/;"	m	struct:iron_dome_game::Game	typeref:typename:const int
+GRAVITY	./include/config.hpp	/^#define GRAVITY /;"	d
+GRID_COLUMNS	./include/config.hpp	/^#define GRID_COLUMNS /;"	d
+GRID_ROWS	./include/config.hpp	/^#define GRID_ROWS /;"	d
+Game	./include/game.hpp	/^struct Game$/;"	s	namespace:iron_dome_game
+Game	./src/game.cpp	/^Game::Game() $/;"	f	class:iron_dome_game::Game
+Grid	./include/grid.hpp	/^class Grid$/;"	c	namespace:iron_dome_game
+InitialState	./include/trajectory.hpp	/^struct InitialState$/;"	s	namespace:iron_dome_game
+NONE	./include/entity.hpp	/^    NONE,$/;"	e	enum:iron_dome_game::EntityType
+PITCHER	./include/entity.hpp	/^    PITCHER,$/;"	e	enum:iron_dome_game::EntityType
+PLATE	./include/entity.hpp	/^    PLATE,$/;"	e	enum:iron_dome_game::EntityType
+Pitcher	./include/pitcher.hpp	/^struct Pitcher : public Entity$/;"	s	namespace:iron_dome_game
+Pitcher	./src/pitcher.cpp	/^Pitcher::Pitcher()$/;"	f	class:iron_dome_game::Pitcher
+Plate	./include/plate.hpp	/^struct Plate : public Entity$/;"	s	namespace:iron_dome_game
+Plate	./src/plate.cpp	/^Plate::Plate(Velocity velocity)$/;"	f	class:iron_dome_game::Plate
+Pos	./include/trajectory.hpp	/^struct Pos$/;"	s	namespace:iron_dome_game
+RENDER_FRAME_MS	./include/config.hpp	/^#define RENDER_FRAME_MS /;"	d
+ROCKET	./include/entity.hpp	/^    ROCKET$/;"	e	enum:iron_dome_game::EntityType
+Rocket	./include/rocket.hpp	/^struct Rocket : public Entity$/;"	s	namespace:iron_dome_game
+Rocket	./src/rocket.cpp	/^    Rocket::Rocket(uint16_t x_pos, uint16_t y_pos) {$/;"	f	class:iron_dome_game::Rocket
+Trajectory	./include/trajectory.hpp	/^struct Trajectory$/;"	s	namespace:iron_dome_game
+Velocity	./include/trajectory.hpp	/^struct Velocity$/;"	s	namespace:iron_dome_game
+__anone9f37a300102	./src/grid.cpp	/^        {$/;"	f	function:iron_dome_game::Grid::refresh	file:
+__anone9f37a300202	./src/grid.cpp	/^        {$/;"	f	function:iron_dome_game::Grid::refresh	file:
+__anone9f37a300302	./src/grid.cpp	/^    m_entities.remove_if([](std::shared_ptr<Entity> entity) {$/;"	f	function:iron_dome_game::Grid::refresh	file:
+__anone9f37a300402	./src/grid.cpp	/^     m_entities.remove_if([&to_remove](const std::shared_ptr<Entity>& ptr) {$/;"	f	function:iron_dome_game::Grid::checkHits	file:
+addEntity	./include/grid.hpp	/^    void addEntity(std::shared_ptr<Entity> entity) { m_entities.push_back(entity); }$/;"	f	class:iron_dome_game::Grid	typeref:typename:void
+boundingBox	./src/entity.cpp	/^BoundingBox Entity::boundingBox() $/;"	f	class:iron_dome_game::Entity	typeref:typename:BoundingBox
+calculatePosition	./include/trajectory.hpp	/^    Pos calculatePosition(std::chrono::steady_clock::time_point = std::chrono::steady_clock::now/;"	f	struct:iron_dome_game::Trajectory	typeref:typename:Pos
+calculateVelocityY	./include/trajectory.hpp	/^    inline int calculateVelocityY(std::chrono::steady_clock::time_point = std::chrono::steady_cl/;"	f	struct:iron_dome_game::Trajectory	typeref:typename:int
+canon	./include/game.hpp	/^    std::shared_ptr<Canon> canon;$/;"	m	struct:iron_dome_game::Game	typeref:typename:std::shared_ptr<Canon>
+checkHits	./src/grid.cpp	/^uint16_t Grid::checkHits() $/;"	f	class:iron_dome_game::Grid	typeref:typename:uint16_t
+columns	./include/grid.hpp	/^    uint16_t columns() { return GRID_COLUMNS; }$/;"	f	class:iron_dome_game::Grid	typeref:typename:uint16_t
+draw	./src/grid.cpp	/^void Grid::draw() $/;"	f	class:iron_dome_game::Grid	typeref:typename:void
+drawOnGrid	./src/canon.cpp	/^void Canon::drawOnGrid(Grid &grid)$/;"	f	class:iron_dome_game::Canon	typeref:typename:void
+drawOnGrid	./src/pitcher.cpp	/^void Pitcher::drawOnGrid(Grid &grid)$/;"	f	class:iron_dome_game::Pitcher	typeref:typename:void
+drawOnGrid	./src/plate.cpp	/^void Plate::drawOnGrid(Grid &grid)$/;"	f	class:iron_dome_game::Plate	typeref:typename:void
+drawOnGrid	./src/rocket.cpp	/^    void Rocket::drawOnGrid(Grid& grid) {$/;"	f	class:iron_dome_game::Rocket	typeref:typename:void
+drawPixel	./src/grid.cpp	/^bool Grid::drawPixel(uint16_t row, uint16_t col, char pixel) $/;"	f	class:iron_dome_game::Grid	typeref:typename:bool
+duration	./include/trajectory.hpp	/^    std::chrono::duration<float> duration() { return  std::chrono::steady_clock::now() - initial/;"	f	struct:iron_dome_game::Trajectory	typeref:typename:std::chrono::duration<float>
+forEveryPixel	./src/grid.cpp	/^void Grid::forEveryPixel(std::function<void(int row, int col)> function, const int rowCount, con/;"	f	class:iron_dome_game::Grid	typeref:typename:void
+gameIsActive	./include/game.hpp	/^    std::atomic<bool> gameIsActive = false;$/;"	m	struct:iron_dome_game::Game	typeref:typename:std::atomic<bool>
+grid	./include/game.hpp	/^    Grid grid;$/;"	m	struct:iron_dome_game::Game	typeref:typename:Grid
+height	./include/entity.hpp	/^    uint16_t height = 0;$/;"	m	struct:iron_dome_game::Entity	typeref:typename:uint16_t
+hitGround	./src/entity.cpp	/^bool Entity::hitGround() {$/;"	f	class:iron_dome_game::Entity	typeref:typename:bool
+initialState	./include/trajectory.hpp	/^    InitialState initialState;$/;"	m	struct:iron_dome_game::Trajectory	typeref:typename:InitialState
+intersects	./src/grid.cpp	/^bool Grid::intersects(std::shared_ptr<Entity> e1, std::shared_ptr<Entity> e2) $/;"	f	class:iron_dome_game::Grid	typeref:typename:bool
+iron_dome_game	./include/canon.hpp	/^namespace iron_dome_game {$/;"	n
+iron_dome_game	./include/entity.hpp	/^namespace iron_dome_game$/;"	n
+iron_dome_game	./include/game.hpp	/^namespace iron_dome_game$/;"	n
+iron_dome_game	./include/grid.hpp	/^namespace iron_dome_game$/;"	n
+iron_dome_game	./include/pitcher.hpp	/^namespace iron_dome_game$/;"	n
+iron_dome_game	./include/plate.hpp	/^namespace iron_dome_game$/;"	n
+iron_dome_game	./include/rocket.hpp	/^namespace iron_dome_game$/;"	n
+iron_dome_game	./include/trajectory.hpp	/^namespace iron_dome_game$/;"	n
+iron_dome_game	./src/canon.cpp	/^namespace iron_dome_game $/;"	n	file:
+iron_dome_game	./src/entity.cpp	/^namespace iron_dome_game$/;"	n	file:
+iron_dome_game	./src/game.cpp	/^namespace iron_dome_game$/;"	n	file:
+iron_dome_game	./src/grid.cpp	/^namespace iron_dome_game$/;"	n	file:
+iron_dome_game	./src/pitcher.cpp	/^namespace iron_dome_game$/;"	n	file:
+iron_dome_game	./src/plate.cpp	/^namespace iron_dome_game$/;"	n	file:
+iron_dome_game	./src/rocket.cpp	/^namespace iron_dome_game {$/;"	n	file:
+isShotFired	./include/game.hpp	/^    std::atomic<bool> isShotFired = false;$/;"	m	struct:iron_dome_game::Game	typeref:typename:std::atomic<bool>
+isStatic	./include/canon.hpp	/^    bool isStatic() { return true; }$/;"	f	struct:iron_dome_game::Canon	typeref:typename:bool
+isStatic	./include/pitcher.hpp	/^    bool isStatic() { return true; }$/;"	f	struct:iron_dome_game::Pitcher	typeref:typename:bool
+isStatic	./include/plate.hpp	/^    bool isStatic() { return false; }$/;"	f	struct:iron_dome_game::Plate	typeref:typename:bool
+isStatic	./include/rocket.hpp	/^    bool isStatic() { return false; }$/;"	f	struct:iron_dome_game::Rocket	typeref:typename:bool
+keyboardListener	./src/game.cpp	/^void Game::keyboardListener() $/;"	f	class:iron_dome_game::Game	typeref:typename:void
+m_entities	./include/grid.hpp	/^    std::list<std::shared_ptr<Entity>> m_entities;$/;"	m	class:iron_dome_game::Grid	typeref:typename:std::list<std::shared_ptr<Entity>>
+m_grid	./include/grid.hpp	/^    char m_grid[GRID_ROWS][GRID_COLUMNS];$/;"	m	class:iron_dome_game::Grid	typeref:typename:char[][]
+main	./src/main.cpp	/^int main(int argc, char** argv)$/;"	f	typeref:typename:int
+p1	./include/grid.hpp	/^    Pos p1;$/;"	m	struct:iron_dome_game::BoundingBox	typeref:typename:Pos
+p2	./include/grid.hpp	/^    Pos p2;$/;"	m	struct:iron_dome_game::BoundingBox	typeref:typename:Pos
+platesFired	./include/game.hpp	/^    uint16_t platesFired = 0;$/;"	m	struct:iron_dome_game::Game	typeref:typename:uint16_t
+platesHit	./include/game.hpp	/^    uint16_t platesHit   = 0;$/;"	m	struct:iron_dome_game::Game	typeref:typename:uint16_t
+play	./src/game.cpp	/^void Game::play() $/;"	f	class:iron_dome_game::Game	typeref:typename:void
+pos	./include/trajectory.hpp	/^    Pos pos;$/;"	m	struct:iron_dome_game::InitialState	typeref:typename:Pos
+pos	./src/entity.cpp	/^Pos Entity::pos() $/;"	f	class:iron_dome_game::Entity	typeref:typename:Pos
+refresh	./src/grid.cpp	/^void Grid::refresh() $/;"	f	class:iron_dome_game::Grid	typeref:typename:void
+rows	./include/grid.hpp	/^    uint16_t rows() { return GRID_ROWS; }$/;"	f	class:iron_dome_game::Grid	typeref:typename:uint16_t
+shotsFired	./include/game.hpp	/^    uint16_t shotsFired  = 0;$/;"	m	struct:iron_dome_game::Game	typeref:typename:uint16_t
+spawnPlate	./src/game.cpp	/^void Game::spawnPlate() $/;"	f	class:iron_dome_game::Game	typeref:typename:void
+t0	./include/trajectory.hpp	/^    std::chrono::steady_clock::time_point t0 = std::chrono::steady_clock::now();$/;"	m	struct:iron_dome_game::InitialState	typeref:typename:std::chrono::steady_clock::time_point
+trajectory	./include/entity.hpp	/^    Trajectory trajectory;$/;"	m	struct:iron_dome_game::Entity	typeref:typename:Trajectory
+type	./include/canon.hpp	/^    EntityType type() override { return EntityType::CANNON; }$/;"	f	struct:iron_dome_game::Canon	typeref:typename:EntityType
+type	./include/entity.hpp	/^    virtual EntityType type() { return EntityType::NONE; }$/;"	f	struct:iron_dome_game::Entity	typeref:typename:EntityType
+type	./include/pitcher.hpp	/^    EntityType type() override { return EntityType::PITCHER; }$/;"	f	struct:iron_dome_game::Pitcher	typeref:typename:EntityType
+type	./include/plate.hpp	/^    EntityType type() override { return EntityType::PLATE; }$/;"	f	struct:iron_dome_game::Plate	typeref:typename:EntityType
+type	./include/rocket.hpp	/^    EntityType type() override { return EntityType::ROCKET; }$/;"	f	struct:iron_dome_game::Rocket	typeref:typename:EntityType
+velocity	./include/trajectory.hpp	/^    Velocity velocity;$/;"	m	struct:iron_dome_game::InitialState	typeref:typename:Velocity
+width	./include/entity.hpp	/^    uint16_t width = 0;$/;"	m	struct:iron_dome_game::Entity	typeref:typename:uint16_t
+x	./include/trajectory.hpp	/^    int16_t x;$/;"	m	struct:iron_dome_game::Velocity	typeref:typename:int16_t
+x	./include/trajectory.hpp	/^    uint16_t x;$/;"	m	struct:iron_dome_game::Pos	typeref:typename:uint16_t
+y	./include/trajectory.hpp	/^    int16_t y;$/;"	m	struct:iron_dome_game::Velocity	typeref:typename:int16_t
+y	./include/trajectory.hpp	/^    uint16_t y;$/;"	m	struct:iron_dome_game::Pos	typeref:typename:uint16_t
